@@ -1,0 +1,32 @@
+[project]
+name = "grooveprep"
+version = "0.1.0"
+description = "Rust-powered dataset prep and audio tooling with Python bindings"
+requires-python = ">=3.11"
+dependencies = [
+    "demucs>=4.0.0",
+    "ffmpeg-python>=0.2.0",
+    "librosa>=0.10.1",
+    "matplotlib>=3.8.0",
+    "mido>=1.2.10",
+    "music21>=7.3.3",
+    "numpy>=1.26.4",
+    "pandas>=2.2.3",
+    "pedalboard>=0.7.0",
+    "scikit-learn>=1.6.1",
+    "tensorflow>=2.13.0",
+    "tqdm>=4.66.2",
+    "ipython",
+    "jupyter",
+]
+
+[project.optional-dependencies]
+dev = ["black", "pytest", "mypy"]
+
+[build-system]
+requires = ["maturin>=1.0,<2.0"]
+build-backend = "maturin"
+
+[tool.maturin]
+bindings = "pyo3"
+manifest-path = "data-preparation/Cargo.toml"

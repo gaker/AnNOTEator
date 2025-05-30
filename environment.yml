@@ -1,0 +1,20 @@
+name: grooveprep
+channels:
+  - https://repo.anaconda.com/pkgs/main
+  - https://repo.anaconda.com/pkgs/r
+dependencies:
+  - python=3.11
+  - tensorflow
+  - numpy
+  - pandas
+  - ffmpeg
+  - matplotlib
+  - jupyter
+  - music21
+  - ipython
+  - scikit-learn
+  - librosa
+  - mido
+  - rust
+  - maturin
+prefix: /home/ubuntu/miniconda3/envs/grooveprep
